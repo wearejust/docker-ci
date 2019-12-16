@@ -1,4 +1,4 @@
-FROM tetraweb/php:7.3
+FROM roadiz/php73-runner
 
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
