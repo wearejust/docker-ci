@@ -1,4 +1,4 @@
-FROM tetraweb/php:7.1
+FROM tetraweb/php:7.3
 
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
