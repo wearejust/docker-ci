@@ -1,4 +1,4 @@
-FROM roadiz/php74-runner
+FROM roadiz/php74-runner:node-10
 
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
