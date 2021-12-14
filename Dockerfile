@@ -3,8 +3,7 @@ FROM roadiz/php74-runner:node-14
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
 
-RUN composer global require deployer/deployer:"^6.8"
-RUN composer global require deployer/recipes:"^6.2.2"
+RUN composer global require deployer/deployer:"^7.0"
 
 # Install GIT-FTP
 RUN git clone https://github.com/git-ftp/git-ftp.git
