@@ -1,9 +1,10 @@
-FROM roadiz/php74-runner:node-14
+FROM roadiz/php81-runner:node-16
 
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
-
-RUN composer global require deployer/deployer:"^7.0"
+RUN composer global config minimum-stability dev
+RUN composer global require deployer/deployer:"v7.0.0-rc.8"
+RUN ln -sf /root/.composer/vendor/bin/deployer.phar /usr/local/bin/dep
 
 # Install GIT-FTP
 RUN git clone https://github.com/git-ftp/git-ftp.git
