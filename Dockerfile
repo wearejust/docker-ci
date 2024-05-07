@@ -14,3 +14,5 @@ RUN cd git-ftp && make install
 RUN apt-get update && apt-get install -y lftp
 
 RUN docker-php-ext-enable zip
+
+RUN corepack enable pnpm
