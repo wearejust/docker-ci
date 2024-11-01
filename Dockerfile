@@ -3,7 +3,7 @@ FROM roadiz/php83-runner:node-20
 ENV PATH "$PATH:~/.composer/vendor/bin"
 
 RUN composer global config minimum-stability dev
-RUN composer global require deployer/deployer:"v7.3.1"
+RUN composer global require deployer/deployer:"v7.4.1"
 RUN ln -sf /root/.composer/vendor/bin/deployer.phar /usr/local/bin/dep
 
 # Install GIT-FTP
