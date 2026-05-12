@@ -14,7 +14,7 @@ Supports multiple PHP and Node.js versions for maximum compatibility across lega
 - ✅ Multi-arch builds (`linux/amd64` + `linux/arm64`)
 - ✅ Common extensions pre-installed (`gd`, `intl`, `mbstring`, `pdo_*`, `zip`, etc.)
 - ✅ Composer 2 with Deployer 7
-- ✅ PNPM + Yarn
+- ✅ PNPM 10 + Yarn
 - ✅ SSH, Git, lftp - ready for CI/CD deployments
 - ✅ Built and published automatically via GitHub Actions
 
@@ -55,13 +55,13 @@ Supports multiple PHP and Node.js versions for maximum compatibility across lega
 
 To track the latest build with the most recent stable versions, use the `latest` tag: ghcr.io/wearejust/docker-ci:latest.
 
-Currently this uses PHP 8.3 and Node.js 20.
+Currently this uses PHP 8.5 and Node.js 24.
 
 ### Edge builds
 
 Latest development images (built from the `main` branch):
 
-ghcr.io/wearejust/docker-ci:php8.3-node20-edge
+ghcr.io/wearejust/docker-ci:php8.5-node24-edge
 
 These include all recent Dockerfile updates before a tagged release and should be used for development purposes only.
 

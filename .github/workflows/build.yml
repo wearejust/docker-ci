@@ -80,7 +80,7 @@ jobs:
 
       - name: Tag and push the default variant as latest
         run: |
-          DEFAULT_TAG=php8.3-node20
+          DEFAULT_TAG=php8.5-node24
           VERSION_TAG=${GITHUB_REF_NAME}
           echo "Tagging $DEFAULT_TAG as latest and $VERSION_TAG"
           docker pull $REGISTRY/${IMAGE_NAME}:$DEFAULT_TAG
