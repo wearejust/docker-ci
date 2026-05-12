@@ -67,8 +67,7 @@ RUN install-php-extensions \
       exif
 
 # Node package managers
-RUN corepack enable pnpm && \
-    corepack use pnpm@10 && \
+RUN npm install -g pnpm@10 && \
     npm install -g yarn
 
 WORKDIR /app
