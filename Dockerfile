@@ -70,5 +70,10 @@ RUN install-php-extensions \
 RUN npm install -g pnpm@10 && \
     npm install -g yarn
 
+# Install GIT-FTP
+RUN git clone https://github.com/git-ftp/git-ftp.git
+RUN cd git-ftp && git checkout "$(git tag | grep '^[0-9]*\.[0-9]*\.[0-9]*$' | tail -1)"
+RUN cd git-ftp && make install
+
 WORKDIR /app
 CMD ["php", "-v"]
