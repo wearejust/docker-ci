@@ -15,7 +15,7 @@ Supports multiple PHP and Node.js versions for maximum compatibility across lega
 - ✅ Common extensions pre-installed (`gd`, `intl`, `mbstring`, `pdo_*`, `zip`, etc.)
 - ✅ Composer 2 with Deployer 7
 - ✅ PNPM 10 + Yarn
-- ✅ SSH, Git, lftp - ready for CI/CD deployments
+- ✅ SSH, Git, lftp, git-ftp - ready for CI/CD deployments
 - ✅ Built and published automatically via GitHub Actions
 
 ---
